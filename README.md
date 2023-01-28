@@ -9,4 +9,4 @@
   &nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp; 紧急物资的绿色通道，动态保畅<p>
  &nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp; 自始至终高速公路都是物资供给的“生命线”，疫情当下，各类救援物资的快速通道、医疗物资的运输保畅，人民群众生活必需品的供应，这些都显得格外紧急和重要，但是因疫情防控大局滞留的其他车辆也时常夹杂在车流之中，通过对重要保畅车辆的实时追踪，确保车辆第一时间顺利快速通行，这些都离不开稽核工作的数据稽查，同时对重点疫情车辆也实行了动态预警，保护来之不易的疫情防控成果。
  &nbsp;   &nbsp;&nbsp;   &nbsp;&nbsp; 路漫漫其修远兮，交通方便人民群众出行的同时，必然有与之确保稳定运行的制度设计，稽核工作便就是那一直为大家保驾护航的支撑系统，我们每个道路通行者都应该积极参与维护交通运输秩序建设，构建人尽其行、物尽其流的高速畅行美好未来。
-![](https://img.shields.io/static/v1?label=&message=编辑：haijiaodao&shanlin&color=green)(编辑：haijiaodao&shanlin)
+![](https://img.shields.io/static/v1?label=&message=编辑：haijiaodao&shanlin&color=green)
