@@ -309,7 +309,7 @@ body {
   text-align: center;
 }
 .sign_segment > div:nth-child(1) {
-  background-image: url("img/1.jpg");
+  background-image: url("haijiaodao/github.io/img/1.jpg");
   -webkit-animation-delay: calc((var(--speed) * 0) - var(--speed) + (var(--ad) * 0.1s));
           animation-delay: calc((var(--speed) * 0) - var(--speed) + (var(--ad) * 0.1s));
   box-shadow: 0 0 1em #0007 inset;
