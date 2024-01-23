@@ -318,7 +318,7 @@ body {
   background-image: inherit;
 }
 .sign_segment > div:nth-child(2) {
-  background-image: url("../img/2.jpg");
+  background-image: url("github.io/2.jpg");
   -webkit-animation-delay: calc((var(--speed) * -0.3333333333) - var(--speed) + (var(--ad) * 0.1s));
           animation-delay: calc((var(--speed) * -0.3333333333) - var(--speed) + (var(--ad) * 0.1s));
   box-shadow: 0 0 1em #0007 inset;
@@ -327,7 +327,7 @@ body {
   background-image: inherit;
 }
 .sign_segment > div:nth-child(3) {
-  background-image: url("../img/3.jpg");
+  background-image: url("img/3.jpg");
   -webkit-animation-delay: calc((var(--speed) * -0.6666666667) - var(--speed) + (var(--ad) * 0.1s));
           animation-delay: calc((var(--speed) * -0.6666666667) - var(--speed) + (var(--ad) * 0.1s));
   box-shadow: 0 0 1em #0007 inset;
