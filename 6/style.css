@@ -46,7 +46,7 @@ nav .wrapper:before, nav .wrapper:after {
   width: 25%;
   max-width: 150px;
   height: 300%;
-  background-color: red;
+  background-color: #1589FF;
   z-index: -1;
 }
 nav .wrapper:before {
