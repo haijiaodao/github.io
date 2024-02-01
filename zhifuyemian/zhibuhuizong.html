@@ -15,7 +15,7 @@
         border-spacing: 0; /*去除单元格间距*/
         overflow: hidden; /*超出容器时隐藏滚动条*/
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /*添加阴影效果*/
-        border-radius: 30px; /*设置圆角半径*/
+        border-radius: 40px; /*设置圆角半径*/
     }
 }
     caption{
@@ -38,10 +38,11 @@ div{
 width: 100%;
     height: 100px;
     margin: 0 auto;
-background-color:#E0E0E0;
+background-color:white;
 font-family: Arial, sans-serif;
 font-size: 28px;
 font-weight: bold;
+text-align:center;
 color:white;
 }
 .shadow {
@@ -56,6 +57,43 @@ top: 380PX;
 left: 50%;
 transform: translateX(-50%);
 }
+
+
+* {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        .box {
+            width: 150px;
+            margin: 50px auto;
+        }
+        
+        .box-bg {
+            width: 100%;
+            height: 40%;
+        }
+        
+        .box-bg img {
+            width: 8%;
+            height: 13%;
+        }
+        
+        .box-text {
+            width: 100%;
+            background: white;
+        }
+        
+        .box-text h2 {
+            text-align: center;
+            padding: 5px 0;
+        }
+        
+        .box-text p {
+            font-size: 18px;
+            text-align: center;
+            padding-bottom: 10px;
+        }
 </style>
 <script>
     onload = function(){
@@ -84,52 +122,53 @@ transform: translateX(-50%);
 <body>
 
     <table id="tab">
-        <caption><div> <h1 class="shadow">服务清单</div></h1></caption>
-        <tr style="height:50px;">
+        <div> <h1 class="shadow">服务清单</div></h1>
+        <tr style="height:60px;">
             <th>服务类型</th>
             <th>提供服务</th>
             <th>份数</th>
             <th>费用</th>
             <th>小计</th>
         </tr>
-        <tr style="height:40px;">
+        <tr style="height:50px;">
             <td>3月期会员</td>
             <td>每日免费1篇稿件</td>        
             <td><input type="text" /></td>
             <td>￥60</td>
             <td>￥0.00</td>
         </tr>
-        <tr style="height:40px;">
+        <tr style="height:50px;">
             <td>1年期会员</td>
             <td>每日免费2篇稿件</td>        
             <td><input type="text" /></td>
             <td>￥199.99</td>
             <td>￥0.00</td>
         </tr>
-        <tr style="height:40px;">
+        <tr style="height:50px;">
             <td>5年期会员</td>
             <td>每日免费3篇稿件</td>        
             <td><input type="text" /></td>
             <td>￥499.99</td>
             <td>￥0.00</td>
         </tr>
-         <tr style="height:40px;">
+         <tr style="height:50px;">
             <td>本站终身VIP会员</td>
             <td>不限数量投稿</td>        
             <td><input type="text" /></td>
             <td>￥999.99</td>
             <td>￥0.00</td>
         </tr>
-        <tr style="height:40px;">
+        <tr style="height:50px;">
             <td colspan=4 style="text-align:right;">费用合计：</td>
             <td id="sum">￥0.00</td>
         </tr>
 
 </div></div>
     </table>
-<div>
-  <a href="1.html"><img src="10.png" alt="A beautiful image"></a>
-
-</div>
+<div class="box">
+<div class="box-bg">
+  <a href="zhifuyemian/1.html"><img src="10.png" alt="A beautiful image"></a></div><div class="box-text">
+<p style="text-shadow: 2px 2px 5px #555555;text-align: center;">点击购物车去支付</p>
+</div></div>
 </body>
 </html>
