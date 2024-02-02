@@ -29,14 +29,15 @@ function init() {
 	l2.load('images/2.jpg', function(img) {
 		slide2.setImage(img);
 	})
-  var slide2 = new Slide(width, height, 'in');
-  var l2 = new THREE.ImageLoader();
-	l2.setCrossOrigin('Anonymous');
-	l2.load('images/3.jpg', function(img) {
+  var slide3 = new Slide(width, height, 'in');
+  var l3 = new THREE.ImageLoader();
+	l3.setCrossOrigin('Anonymous');
+	l3.load('images/3.jpg', function(img) {
 		slide3.setImage(img);
 	})
 	
   root.scene.add(slide2);
+root.scene.add(slide3);
 
   var tl = new TimelineMax({repeat:-1, repeatDelay:1.0, yoyo: true});
 
