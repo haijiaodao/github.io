@@ -1,0 +1,18 @@
+﻿@charset "utf-8";
+*{margin:0;padding:0;list-style-type:none;}
+a,img{border:0;}
+body{font:12px/180% Arial, Helvetica, sans-serif, "新宋体";}
+a{color:#333;text-decoration:none;}
+a:hover{color:#ef9b11;text-decoration:underline;}
+
+/* brandbox */
+.brandbox{width:728px;margin:20px auto;}
+.brandbox ul li{float:left}
+.brandbox ul li.brand_item{width:182px;height:182px}
+.brand_item a{display:block;width:168px;height:169px}
+.brand_item a:hover{text-decoration:none}
+.brand_item a.brand_name{border:#b69d6b 1px solid;}
+.brand_item a.brand_detail{border:#daa900 2px solid;}
+.brand_item a span{display:block;margin-left:1px;width:166px;padding-top:6px;height:24px;text-align:center}
+a.brand_name span{color:#7f5400;background-color:#e0dbcd}
+a.brand_detail span{color:#fff;background-color:#8d5303}
