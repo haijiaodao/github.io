@@ -1,0 +1,7 @@
+body{background-color:#444;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;color:000;background-color:dde}#page{width:990px;padding:10px;background-color:#fff;margin:auto}p{line-height:135%}#header{height:80px;background-color:#DCDCDC}#footer{height:150px;background-color:#eee}div.clear{clear:both;line-height:0;font-size:0;width:100%}div.box-1{width:220px;height:200px;float:right;background-color:#fff;margin-left:40px;margin-bottom:40px;background-color:#542437}#content{margin:40px 20px}h1{font-size:270%;color:#542437}h2{font-size:200%;text-indent:1em;color:red }h3{font-size:140%}hr{border:1px solid #fff;border-top:4px solid #eee;margin-top:20px;margin-bottom:20px}.column-l{float:left;width:49%}.column-r{float:right;width:49%}p.preface{font-style:italic;font-size:150%;padding-left:20px;border-left:5px solid #542437}a{color:#c02942}a:hover{color:#d95b43}p.copyright{font-size:11px;padding:10px;text-align:center;color:#aaa}.demo-description{padding:25px;border-radius:5px;background-color:#DCDCDC}.demo-description p{color:#111;text-shadow:0 1px 0 rgba(255,255,255,0.3);font-size:16px}.demo-description a{color:#fff;text-shadow:0 1px 1px rgba(0,0,0,0.5)}.demo-description a:hover{text-decoration:none}.demo-description pre{border:2px dashed #fff;padding:15px;border-radius:5px}.demo-description h1{color:#fff;text-shadow:0 1px 2px rgba(0,0,0,0.5);margin:0;padding:0}
+p {
+       line-height: 1.5; /* 设置行高 */
+    text-align: left; /* 设置?对齐 */
+    text-indent:2em; /*首页缩进2个字符*/
+}
+img{display:block;margin-left:auto;margin-right:auto;}
