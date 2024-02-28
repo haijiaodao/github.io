@@ -168,7 +168,7 @@ a {
   top: 0;
   left: 0;
   height: 100%;
-  width: -100%;
+  width: -30%;
   background: #000000;;
   border-radius: 10px;
   transform: scaleX(0);
