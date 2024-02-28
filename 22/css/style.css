@@ -62,7 +62,7 @@ a {
 
 #slideImg:checked ~ .inner_part .img {
  height: 350px;
- width: 300px;
+ width: 350px;
  z-index: 99;
  transition: .3s .2s ease-in;
 }
@@ -168,7 +168,7 @@ a {
   top: 0;
   left: 0;
   height: 100%;
-  width: -30%;
+  width: -100%;
   background: #000000;;
   border-radius: 10px;
   transform: scaleX(0);
