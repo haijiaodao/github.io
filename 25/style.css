@@ -14,6 +14,7 @@ max-height:590px;
 height:expression(this.height>590?"590px":this.height);
 box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* 这里的值分别表示水平位移、垂直位移、模糊程度和透明度 */
 border-radius: 20px; /* 单个参数时，四个角都被设置成相同的半径大小 */
+left: 15px;
 
 }
 img1{
