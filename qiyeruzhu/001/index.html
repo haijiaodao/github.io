@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>优秀入驻商家</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./swiper-bundle.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;  
+    }
+    .mySwbox-main{
+        background-color: #f4f4f4;
+    }
+    .mySwbox{
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        padding: 35px 10px 0;
+        width: 100%;
+        height: 100%;
+       
+    }
+    .titlebox{
+    width: 40%;
+    position: absolute;
+    left: 10px;
+    top: 5%;
+    z-index: 10;
+    }
+    .titlebox .section-title1{
+        color: #333333;
+    font-size: 26px;
+    padding-top: 40px;
+    }
+    .titlebox strong{
+        display: block;
+    font-weight: normal;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    position: relative;
+    }
+    .titlebox strong::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 5px;
+    background: #4177b7;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    border-radius: 10px;
+}
+    .titlebox p{
+        margin: 0;
+    background-color: #1b1b1b;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    color: #f4f4f4;
+    padding: 0 15px;
+    display: inline-block; 
+    }
+    .swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+    }
+    .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+    .gallery-thumbs {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 1;
+    }
+    .gallery-thumbs .swiper-slide-thumb-active {
+        opacity: 1;
+    }
+    .slide .text{ width: 45%;   color:#333333; padding-top: 15%; overflow: hidden; padding-right: 5%;flex-shrink: 0;}
+.slide .text h2{margin: 0;}
+.slide .text h2 .s1{font-size:20px;line-height:46px;}
+.slide .text h2 .s2{font-size:14px;font-weight:normal;line-height:46px;margin-left:15px}
+.slide .text h2 .s3{float:right;font-size:57px;line-height:46px;}
+.slide .text p{font-size:14px;line-height:30px;color:#666; margin: 0;}
+.slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.slide img{
+    max-width: 100%;
+}
+.mySwbox-thumbs{background-color: #fff;box-shadow: 0 0 10px #ddd; margin-top: 25px;}
+.mySwbox-thumbs .gallery-thumbs{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.gallery-thumbs .swiper-slide{
+    flex: 1;
+    position: relative;
+    transition: all ease .5s;
+    cursor: pointer;
+    display: flex;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    padding: 20px;
+    border-right: 1px solid #ebebeb;
+}
+.img-center{
+    position: relative;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    border-right: 1px solid #ebebeb;
+}
+.gallery-thumbs .swiper-slide.swiper-slide-thumb-active .i1 {
+    display: none;
+}
+.gallery-thumbs .swiper-slide.swiper-slide-thumb-active::before {
+    width: 100%;
+}
+.gallery-thumbs .swiper-slide:before {
+    width: 0;
+    height: 100%;
+    background: #4177b7;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+}
+.gallery-thumbs .slide-icon {
+    display: flex;
+}
+.gallery-thumbs .swiper-slide.swiper-slide-thumb-active .text {
+    color: #FFF;
+}
+.gallery-thumbs .swiper-slide .i2 {
+    display: none;
+}
+.gallery-thumbs .swiper-slide.swiper-slide-thumb-active .i2 {
+    display: block;
+}
+.gallery-thumbs .swiper-slide .text {
+    position: relative;
+    z-index: 999;
+    padding-left: 25px;
+    color: #333333;
+}
+.gallery-thumbs .swiper-slide .text h2 {
+    font-size: 16px;
+    margin: 0;
+    line-height: 30px;
+}
+.gallery-thumbs .swiper-slide:last-child {
+    border-right: 0;
+}
+.gallery-thumbs .swiper-slide.swiper-slide-thumb-active .text p {
+    color: #FFF;
+}
+.gallery-thumbs .swiper-slide .text p {
+    font-size: 12px;
+    color: #666666;
+    margin: 0;
+    line-height: 25px;
+}
+.gallery-thumbs .swiper-slide .icon {
+  width: 50px;
+  height: 50px;
+  vertical-align: -0.15em;
+  fill: #333333;
+  overflow: hidden;
+  transition: all ease .5s;
+}
+.gallery-thumbs .swiper-slide.swiper-slide-thumb-active .icon{
+    fill: #ffffff;
+}
+
+
+@media (max-width:992px) {
+    .mySwbox-thumbs .gallery-thumbs{padding: 10px;}
+    .gallery-thumbs .swiper-slide{padding: 10px;}
+    .img-center{width: 55px;}
+    .titlebox .section-title1{font-size: 24px;}
+    .gallery-thumbs .swiper-slide .text{padding-left: 15px;}
+}
+@media (max-width:768px) {
+    .mySwbox-thumbs{margin-left: 10px;margin-right: 10px;}
+    .mySwbox{padding-top: 15px;}
+    .titlebox .section-title1 {font-size: 24px;padding: 0;}
+    .slide .text{width: 100%;padding-top: 20px;padding-right: 0;}
+    .slide{flex-direction: column;}
+    .titlebox {width: 100%;position: relative;left: 0;top: 5%;z-index: 10;}
+    .slide .img{margin-top: 10px;}
+    .gallery-thumbs .swiper-slide .text{display: none;}
+    .gallery-thumbs .slide-icon{width: 100%;}
+    .img-center {border-right: 0;width: 100%;}
+    .mySwbox-main{padding: 5px 0 30px 0;}
+    .gallery-thumbs .swiper-slide{margin-right: 0 !important;}
+    .slide .text h2 .s3{display: none;}
+}
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="mySwbox-main">
+        <div class="mySwbox">
+            <div class="titlebox">
+                <div class="section-title1">
+                    <strong>公司优势，为什么选择我们？</strong>
+                    <p>咨询、设计、安装、维护，工程一站式服务商</p>
+                </div>
+            </div>
+            <div class="swiper-container mySwiper2 gallery-top">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="text">
+                                <h2><span class="s1">综合实力</span><span class="s2">多年专注膜结构工程</span><span class="s3">01</span></h2>							
+                                <p>工程行业深耕多年</p>
+                                <p>专注膜结构车棚、体育设施膜结构、景观设施膜结构、污水池膜结构、充气膜结构、商业设施膜结构等设计、制作、安装、维护及加工于一体</p>
+                                <p>年施工能力28万㎡，施工单位面积可达8万㎡</p>										
+                            </div>
+                            <div class="img">
+                                <img src="./1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="text">
+                                <h2><span class="s1">工程质量</span><span class="s2">多项资质实力值得信赖</span><span class="s3">02</span></h2>							
+                                <p>多种工程车辆，多项成功案例</p>
+                                <p>荣获多项省、市优秀企业表彰</p>
+                                <p>工程质量行业标准</p>										
+                            </div>
+                            <div class="img">
+                                <img src="./2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="text">
+                                <h2><span class="s1">工期方案</span><span class="s2">严格执行合同约定</span><span class="s3">03</span></h2>							
+                                <p>按照施工合同保质保量</p>
+                                <p>公司有专业的售后团队，确保工程如期完成</p>
+                                <p>欢迎广大业主和有实力的团队对接</p>										
+                            </div>
+                            <div class="img">
+                                <img src="./3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <div class="text">
+                                <h2><span class="s1">高性价比</span><span class="s2">同行业性价比逐年优质数据</span><span class="s3">04</span></h2>							
+                                <p>欢迎有需求的甲方来公司考察、洽谈</p>
+                                <p>公司以诚信为本</p>
+                                <p>公司以质量立足</p>										
+                            </div>
+                            <div class="img">
+                                <img src="./4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="mySwbox-thumbs">
+            <div class="swiper-container mySwiper gallery-thumbs">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-icon">
+                            <div class="img-center">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-jewelry"></use>
+                                </svg>
+                            </div>
+                            <div class="text">
+                                <h2>综合实力</h2>
+                                <p>STRENGTH</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-icon">
+                            <div class="img-center">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-tool-hardware"></use>
+                                </svg>
+                            </div>
+                            <div class="text">
+                                <h2>工程质量</h2>
+                                <p>QUALITY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-icon">
+                            <div class="img-center">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-rejected-order-fill"></use>
+                                </svg>
+                            </div>
+                            <div class="text">
+                                <h2>工期方案</h2>
+                                <p>DURATION PLAN</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide-icon">
+                            <div class="img-center">
+                                <svg class="icon" aria-hidden="true">
+                                    <use xlink:href="#icon-inquiry-template-fill"></use>
+                                </svg>
+                            </div>
+                            <div class="text">
+                                <h2>高性价比</h2>
+                                <p>COST PERFORMANCE</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="jquery.js"></script>
+    <script src="./swiper-bundle.min.js"></script>
+    <script src="./iconfont.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+          observeParents: true,
+          observer: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+          spaceBetween: 10,
+          observeParents: true,
+          observer: true,
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+      </script>
+</body>
+</html>
