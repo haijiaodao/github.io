@@ -69,6 +69,15 @@ quote {
 text-indent:2em;
 text-align:justify;
 }
+  #bottom-outer {
+    color: #888;
+    text-align: right;
+    padding: 10px;
+    padding-top: 40px;
+    background-color: #;
+    font-size: 14px;
+    opacity:0.85;
+}
   .name {
             display: inline; /* 确保名字显示在同一行 */
             line-height: 1.5em; /* 根据需求调整行高 */
