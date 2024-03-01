@@ -71,6 +71,36 @@ document.write("时间: " + document.lastModified + "")
     // 将URL设置为空字符串，从而隐藏地址栏的URL
     history.pushState(null, null, '');
 </script>
+  <!-- partial -->
+<script>
+    // 获取当前页面的URL
+    var url = window.location.href;
+    
+    // 将URL设置为空字符串，从而隐藏地址栏的URL
+    history.pushState(null, null, '');
+</script>
   
+<div id="bottom-outer">
+                <div id="bottom-inner">
+                <br>该文访问量:<span id="result1"></span>次
+                    -<span id="year"></span>年度
+                </div>
+            </div>
+        </div>
+
+</body>
+<script type="text/javascript">
+	//流量统计
+                    if (localStorage.pagecount) {
+                        localStorage.pagecount = Number(localStorage.pagecount) + 1;
+                    } else {
+                        localStorage.pagecount = 1;
+                    }
+                    document.getElementById("result1").innerHTML = localStorage.pagecount;
+            //年份获取
+            var myDate = new Date();
+            var year = myDate.getFullYear();
+            document.getElementById('year').innerHTML = year;
+</script>
 </body>
 </html>
