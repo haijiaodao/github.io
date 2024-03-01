@@ -67,6 +67,7 @@ quote {
   font-family: "Comic Neue", cursive;
   color: #333;
 text-indent:2em;
+text-align:justify;
 }
   .name {
             display: inline; /* 确保名字显示在同一行 */
