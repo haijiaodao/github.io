@@ -299,6 +299,9 @@ input::placeholder {
 .user_options-forms.bounceLeft .user_forms-signup {
   -webkit-animation: showSignUp 1s forwards;
           animation: showSignUp 1s forwards;
+		  top: 15px;
+	left: 15px;
+	height: 70%;
 }
 .user_options-forms.bounceLeft .user_forms-login {
   opacity: 0;
@@ -315,7 +318,9 @@ input::placeholder {
  * */
 @media screen and (max-width: 990px) {
   .user_options-forms {
-    min-height: 350px;
+    min-height: 22rem;
+	left: 35px;
+
   }
   .user_options-forms .forms_buttons {
     flex-direction: column;
@@ -325,13 +330,17 @@ input::placeholder {
   }
   .user_options-forms .user_forms-signup,
 .user_options-forms .user_forms-login {
-    top: 40px;
+    top: 50px;
+	left: 15px;
+	width: 90%;
   }
 
   .user_options-registered,
 .user_options-unregistered {
-    padding: 50px 45px;
+    padding: 50px 55px;
   }
+ 
+  
 table {
   margin: auto; /* 设置表格居中对齐 */
 }
