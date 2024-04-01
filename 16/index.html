@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery带音效旋转式切换幻灯片</title>
+
+<link href="css/jquery.rotatingSlideshow.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<div class="rotating-slideshow">
+	<div id="slider-main" data-position="1" data-deg="0">
+		<div id="slider-btns" class="button">
+			<a id="pos1" href="#" class="pos1" data-position="1"></a>
+			<a id="pos2" href="#" class="pos2" data-position="4"></a>
+			<a id="pos3" href="#" class="pos3" data-position="3"></a>
+			<a id="pos4" href="#" class="pos4" data-position="2"></a>
+		</div>
+		<div class="slider-overlay">
+			<div class="active" data-position="1">
+				<h3>3.5学雷锋</h3>
+				<p>在雷锋精神的指引下，为深化和增强新时代文明实践志愿者的奉献服务意识，弘扬雷锋精神并推动文明实践工作深入社区、群众，山临所开展了一系列“学雷锋树新风”公益法律服务进社区活动</p>
+			</div>
+			<div data-position="2">
+				<h3>五一志愿服务</h3>
+				<p>“五一”期间，在高速公路上，随处可见一抹橄榄绿的身影，甘肃公航旅集团高速公路运营分公司山临所以党建带团建，通过青年党员模范带头、团员青年示范引领，在这个假期积极开展安全保畅、咨询引导等志愿服务活动，将“有困难找志愿者，有时间做志愿者”的理念深入人心，为本市旅游产业的发展贡献高速人的力量。</p>
+			</div>
+			<div data-position="3">
+				<h3>十一便民服务</h3>
+				<p>山临所加强出行服务保障。重点加强高速公路服务区现场管理，确保车辆“进得来、出的去”。加大服务区人力物力投入力度，提高停车、如厕、充电、加油、餐饮等服务能力，确保环境卫生整洁、服务便捷高效、停车区车辆分类有序停放。期间，辖区内各服务区过往车流量共约58万次。通过在沿线服务区及收费站点增设便民服务点等举措，为广大司乘人员提供必要帮助和暖心服务。同时，公司围绕保通保畅、出行服务、安全生产等工作，主动宣传基层一线典型人物和先进事迹，充分展示公司职工主动作为、担当奉献、服务为民的良好形象。</p>
+			</div>
+			<div data-position="4">
+				<h3>春运保畅</h3>
+				<p>鏖战风雪，护安全
+
+春运期间，山临所管辖路段经历了3轮寒潮，为确保广大司乘平安出行，所辖各站迎难而上、鏖战风雪，一方面紧盯易凝路段、关注特殊位置、备防事故多发点，开展道路巡查、融雪剂撒布、除雪除冰等工作，另一方面加强与“一路多方”的信息共享、互通路况信息，全力做好恶劣天气期间的安全保畅工作。针对道路结冰严重的重点桥梁及路段，组织人员、设备以“机械+人工”的方式开展破冰专项行动，以实际行动保障道路安全畅通。</p>
+			</div>
+		</div>
+		<div class="slides">
+			<img class="active" src="images/slide1.jpg" data-position="1">
+			<img src="images/slide4.jpg" data-position="2">
+			<img src="images/slide3.jpg" data-position="3">
+			<img src="images/slide2.jpg" data-position="4">
+		</div>
+		<img class="spinner-btn" src="images/button.png" alt="">
+		<img class="spinner" src="images/slides-overlay.jpg" alt="">
+	</div>
+	<audio id="slider-sound" preload="auto">
+		<source src="sound/sound.mp3">
+		你的浏览器不支持HTML5 AUDIO元素。
+	</audio> 
+</div>
+
+<script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.rotatingSlideshow.js"></script>
+<script>
+$(document).ready(function(){
+  $('.rotating-slideshow').rotatingSlideshow({
+	sliderHolder: '#slider-main',
+	btnsHolder: '#slider-btns',
+	audioHolder: '#slider-sound',
+	auto: true,
+	autoSpeed: '6000'
+  });
+});
+</script>
+
+</body>
+</html>
