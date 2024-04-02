@@ -174,7 +174,46 @@ text-align: center; /* 设置容器内部文本或行内元素的对齐方式为
 聚焦人民群众出行便利需要、对准现实工作中诉求的问题ETC办理、绿色通道减免、差异化收费、车道保畅、特殊天气便民服务、应急救援、延伸服务导游路线指引等，全所党员争当标兵、勇做先锋，让党旗在运营收费各个“阵地”高高飘扬，充分发挥党员的先锋模范作用，积极践行亮身份、表承诺、树形象、做表率行动，叫响“我先上”“跟我上”，擦亮了共产党员这块“金字招牌”。</p>
         </div>
         <div style="text-align:center;clear:both">
-<p>责任编辑：办公室</p>
+<p>责任编辑：办公室</p><span style="text-align:right;font-size: 12px;color:#8B0000">&copy;网内版权号：<span id="uniqueNumber"></span>
+    <script>
+function copyCurrentUrl() {
+  navigator.clipboard.writeText(window.location.href).then(function() {
+    console.log('复制成功');
+  }).catch(function(error) {
+    console.error('复制失败', error);
+  });
+}
+
+// 监听鼠标和键盘事件
+document.removeEventListener("mousedown", haveSelect)
+document.addEventListener("mousedown", haveSelect)
+document.removeEventListener("mouseup", haveSelect)
+document.addEventListener("mouseup", haveSelect)
+document.removeEventListener("keydown", haveSelect)
+document.addEventListener("keydown", haveSelect)
+function haveSelect() {
+  window.getSelection().removeAllRanges()
+}
+</script>
+<script>
+// 生成版权
+function generateUniqueNumber(url) {
+  // 使用URL的hashCode作为号码
+  let hash = 0;
+  for (let i = 0; i < url.length; i++) {
+    hash = ((hash << 5) - hash) + url.charCodeAt(i);
+    hash |= 0; // 转换为32位整数
+  }
+  return Math.abs(hash);
+}
+ 
+// 获取当前页面的URL
+const url = window.location.href;
+// 生成唯一号码
+const uniqueNumber = generateUniqueNumber(url);
+// 显示号码
+document.getElementById('uniqueNumber').textContent = uniqueNumber.toString();
+</script>
 
 </div>
     </div>
